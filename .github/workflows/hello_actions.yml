@@ -12,7 +12,15 @@ on:
       
 jobs:
   my_testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PrintHello
+        run: echo "hello from action - testing job"
   
   
   
   my_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PrintHelloDeploy
+        run: echo "hello from action - deploy"
